@@ -3,7 +3,7 @@ Henter HMS-forskrifter fra ptil.no (i pdf format) og organiserer i regneark form
 
 ## OS
 
-Utviklet på Linux Mint
+Utviklet på Linux Mint.
 
 ## Programmer
 
