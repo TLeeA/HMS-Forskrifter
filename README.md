@@ -15,9 +15,9 @@ Utviklet etter oppfordring fra professionel bruker av regelverket for enklere ar
 
 ## Lisens
 
-Alt er utviklet basert på fritt tilgjengelig informasjon på Internettet. Forskriftene er fritt tilgjengelige; det er mulig at layout-modifikasjoner kan berøre rettigheter. Formatendringen er utviklet med henblik på enklere bruk og dermed økt sikkerhet. Det antas derfor fra utvikler at bruken er i henhold til rettighetslovgivningen i Norge.
+Alt er utviklet basert på fritt tilgjengelig informasjon på Internettet. Forskriftene er fritt tilgjengelige; det er mulig at layout-modifikasjoner kan berøre rettigheter. Format-endringen er utviklet med henblik på enklere bruk og dermed økt sikkerhet. Det antas derfor fra utvikler at bruken er i henhold til rettighetslovgivningen i Norge.
 
-Alle er velkomne til å anvende hele eller deler av de utviklede programmene. Programmør har tilstrebt å vise til opprinnelse til enkelte program/code elementer og forventer at fremtidige brukere og utviklere følger samme praksis.
+Alle er velkomne til å anvende hele eller deler av de utviklede programmene. Programmør har tilstrebt å vise til opprinnelse/veiledning for de enkelte program/code -elementer og forventer at fremtidige brukere og utviklere følger samme praksis.
 
 ## Versioner
 
