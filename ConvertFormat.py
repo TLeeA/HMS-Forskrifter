@@ -20,6 +20,7 @@
 import pdftotext, re
 import sys
 
+# get the argument being passed to file:
 regulation = sys.argv[1]
 
 # regulation = 'rammeforskriften'
@@ -27,16 +28,16 @@ file_in = f"{regulation}{'_n.pdf'}"
 file_tmp = f"{regulation}{'_n.tmp'}"
 file_out = f"{regulation}{'_n.txt'}"
 
-# Load your PDF
+# Load the .PDF
 with open(file_in, "rb") as f:
     pdf = pdftotext.PDF(f)
 
-# Save all text to a txt file.
+# Save all text to a .tmp (temporary text) file.
 with open(file_tmp, 'w') as f:
     f.write("\n\n".join(pdf))
 
+# determine number of pages in .pdf file and inform
 no_p =len(pdf)
-
 print('\nNumber of pages in file: ',no_p,'\n')
 #print(pdf[0])
 
@@ -47,25 +48,26 @@ page_list = range(no_p)
 print(page_list)
 page_string = ''
 
+# open output file and read lines from input 
 with open(file_out, 'w') as fo:
     with open(file_tmp, 'r') as ft:
         lines = ft.readlines()
 
-    for line in lines:
+    for line in lines:                                      # re-load the individual lines from .tmp file
         lin_txt = line.strip()
         #lin_txt = line.lstrip()
-        if lin_txt == '':           # lines with no text wil be removed
+        if lin_txt == '':                                   # lines with no text will be removed
             print('Removing an empty line of text')
         elif (not '§' in line) and (len(lin_txt) <= 2):     # lines with 2 or less caracters will 
                                                             # be checked for page numbers and removed
                                                             # this could cause trouble if real text line is short!
                                                             # Actually, it initially did remove the first 9 sections §1 - §9!
            #print(len(lin_txt)) 
-           for i in page_list:
+           for i in page_list:                              # inform about the progress
                 if str(i+1) == lin_txt:
                     print('Removing the page number',lin_txt)
                     break
-        else:
+        else:                                               # all other lines send to file_out (.txt) with a carriage return (\n)
             fo.write(lin_txt)
             fo.write('\n')
 
