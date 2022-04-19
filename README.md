@@ -22,7 +22,7 @@ Alle er velkomne til å anvende hele eller deler av de utviklede programmene. Pr
 
 ## Versioner
 
-1.0: Første versjon utviklet off-line og introdusert i GitHub etter at konvertering av *norsk* regelverkstekst. Fremtidige utviklinger forventes å omfatte branches og/eller nye selvstendige script-samlinger for de tilsvarende engelske 'regulations' og veiledninger til begge språk.
+1.0: Første versjon utviklet off-line og introdusert i GitHub. Kan kun konvertere den *norske* regelverkstekst. Fremtidige utviklinger forventes å omfatte branches og/eller nye selvstendige script-samlinger for de tilsvarende engelske 'regulations' og veiledninger til begge språk.
 
 ## Utvikler
 
